@@ -2,7 +2,7 @@ FROM --platform=$BUILDPLATFORM ubuntu:20.04
 
 RUN apt-get update
 
-RUN apt-get install -y bash curl file git unzip xz-utils zip libglu1-mesa
+RUN apt-get install -y bash curl file git unzip xz-utils zip libglu1-mesa ruby
 
 RUN groupadd -r -g 1441 flutter && useradd --no-log-init -r -u 1441 -g flutter -m flutter
 
